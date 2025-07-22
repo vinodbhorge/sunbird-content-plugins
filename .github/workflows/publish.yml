@@ -6,7 +6,7 @@ on:
       - '*'
 
 env:
-  GCP_BUCKET_NAME: ${{ vars.GCP_BUCKET_NAME }}
+  GCP_BUCKET_NAME: ${{ vars.GCP_BUCKET }}
   CLOUD_PROVIDER: gcp
 
 jobs:
