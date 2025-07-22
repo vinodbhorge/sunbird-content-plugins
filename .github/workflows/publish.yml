@@ -34,11 +34,11 @@ jobs:
         azcliversion: latest
         inlineScript: |
             az storage blob upload-batch \
-                --account-name "${{ secrets.AZURE_STORAGE_ACCOUNT }}" \
-                --account-key "${{ secrets.AZURE_STORAGE_KEY }}" \
-                --destination "${{ env.AZURE_CONTAINER }}/content-plugin-test" \
-                --source . \
-                --overwrite
+              --account-name "${{ secrets.AZURE_STORAGE_ACCOUNT }}" \
+              --account-key "${{ secrets.AZURE_STORAGE_KEY }}" \
+              --destination "${{ env.AZURE_CONTAINER }}/content-plugin-test" \
+              --source . \
+              --overwrite
 
     # Note: Publish to AWS S3 is not tested
 
@@ -56,4 +56,3 @@ jobs:
       #     S3_BUCKET: ${{ vars.S3_BUCKET }}
       #   run: |
       #     aws s3 sync . s3://${{ env.S3_BUCKET }}/content-plugin-test/
-      
