@@ -36,7 +36,7 @@ jobs:
             az storage blob upload-batch \
               --account-name "${{ secrets.AZURE_STORAGE_ACCOUNT }}" \
               --account-key "${{ secrets.AZURE_STORAGE_KEY }}" \
-              --destination "${{ vars.AZURE_CONTAINER }}/content-plugin-test" \
+              --destination "${{ env.AZURE_CONTAINER }}/content-plugin-test" \
               --source . \
               --overwrite
 
