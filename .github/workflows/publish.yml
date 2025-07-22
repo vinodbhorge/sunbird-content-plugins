@@ -11,7 +11,7 @@ env:
   AZURE_CONTAINER: ${{ vars.AZURE_CONTAINER }}
 
 jobs:
-  upload-to-gcp:
+  upload-blob:
     runs-on: ubuntu-latest
     
     steps:
