@@ -1,4 +1,4 @@
-name: Upload Repository to GCP Bucket
+name: Upload Content-Plugin to Blob
 
 on:
   push:
